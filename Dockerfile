@@ -16,7 +16,7 @@ ADD templates/mirthconnect/mirthconnect-install-wrapper.sh /usr/local/mirthconne
 
 RUN wget http://downloads.mirthcorp.com/connect/3.4.2.8129.b167/mirthconnect-3.4.2.8129.b167-unix.sh \
  && sudo chmod +x mirthconnect-3.4.2.8129.b167-unix.sh \
- && ./mirthconnect-install-wrapper.sh
+ && sudo ./mirthconnect-install-wrapper.sh
 
 ADD templates/etc /etc
 ADD templates/mirthconnect /usr/local/mirthconnect
